@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// 基礎樣式的規則。例如margin、padding、color、font-size 等等
+// @layer base {
+//   h1, h2, h3, h4, h5, h6 {
+//     @apply text-revert;
+//   }
+// }
+// 重複使用的樣式區塊，例如：按鈕、卡片等
+// @layer components {
+//   .btn {
+//     @apply bg-black text-white min-w-[80px];
+//   }
+//   .card {
+//     background-color: theme('colors.white');
+//     border-radius: theme('borderRadius.lg');
+//     padding: theme('spacing.6');
+//     box-shadow: theme('boxShadow.xl');
+//   }
+// }
+// 工具層級的樣式，例如： layout、flex、grid、spacing（margin 和padding）、colors、typography、borders 等
+// @layer utilities {
+//   .wrap{
+//     @apply w-[1280px] mx-auto;
+//   }
+//   .center {
+//     @apply flex items-center justify-center;
+//   }
+//   .content-auto {
+//     content-visibility: auto;
+//   }
+// }
+// .title{
+//   @apply text-4xl font-bold;
+// }
+body{ 
+  font-size:16px;
+  // font-family:"Microsoft YaHei", "Microsoft JhengHei", "PingFangTC", Arial, Helvetica, sans-serif;
+  -webkit-text-size-adjust:none; // 在 iOS 旋轉畫面鎖定文字不縮放 
+  -webkit-overflow-scrolling:touch; // 安卓和IOS使用滾動回彈效果 
+}
+//手指點連結的顏色變透明
+// a{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+// #app {
+//   height:100%;
+//   padding-top:1px;
+//   position:relative;
+// }
