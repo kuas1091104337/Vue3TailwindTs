@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.app.json",
+  "include": ["src/**/__tests__/*", "env.d.ts"],
+  "exclude": [],
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.vitest.tsbuildinfo",
+    // DOM 讓 window 與 document 可以直接使用
+    // https://www.typescriptlang.org/tsconfig#lib
+    // "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "lib": ["dom", "esnext"],
+    "types": ["node", "jsdom"]
+  }
+}
